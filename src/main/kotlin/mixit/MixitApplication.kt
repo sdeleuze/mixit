@@ -20,7 +20,6 @@ import org.springframework.context.annotation.FilterType
     org.springframework.boot.autoconfigure.data.mongo.MongoReactiveDataAutoConfiguration::class,
     org.springframework.boot.autoconfigure.data.mongo.MongoReactiveRepositoriesAutoConfiguration::class,
     org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfiguration::class,
-    org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration::class,
     org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration::class,
     org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration::class,
     org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration::class,
