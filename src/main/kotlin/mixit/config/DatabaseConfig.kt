@@ -5,10 +5,10 @@ import org.springframework.boot.CommandLineRunner
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
-@Configuration
+//@Configuration
 class DatabaseConfig {
 
-    @Bean
+    //@Bean
     fun databaseInitializer(userRepository: UserRepository,
                             eventRepository: EventRepository,
                             talkRepository: TalkRepository,
