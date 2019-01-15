@@ -2,7 +2,9 @@ package mixit
 
 import org.springframework.boot.SpringBootConfiguration
 import org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.context.TypeExcludeFilter
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
@@ -37,6 +39,8 @@ import org.springframework.context.annotation.FilterType
     org.springframework.boot.autoconfigure.web.reactive.error.ErrorWebFluxAutoConfiguration::class,
     org.springframework.boot.autoconfigure.web.reactive.function.client.ClientHttpConnectorAutoConfiguration::class,
     org.springframework.boot.autoconfigure.web.reactive.function.client.WebClientAutoConfiguration::class])
+@AutoConfigurationPackage
+@EntityScan
 @EnableConfigurationProperties(MixitProperties::class)
 class MixitApplication
 
